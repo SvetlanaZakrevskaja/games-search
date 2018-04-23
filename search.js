@@ -1,5 +1,5 @@
 /**
- * Script searches through LS games JSON. Read READ.me for details.
+ * Script searches through LS games JSON. Read README for details.
  * @author Lana Zakrevska <lana.zakrevska@gmail.com>
  * @version 1.0.0
  */
