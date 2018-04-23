@@ -1,0 +1,65 @@
+Search
+
+How to add it to the site:
+
+1. Create chunk 'gamesToJSON' with content:
+{
+ "image": [
+    {
+        "src":"[[+tv.game_img]]",
+        "alt":"[[+tv.game_img_title]]"
+    }
+ ],
+ "link": [
+    {
+        "href":"[[~[[+id]]]]",
+        "title":"[[+pagetitle]]"
+    }
+ ]
+},
+
+2. Create chunk 'gamesToJSONLast':
+{
+ "image": [
+    {
+        "src":"[[+tv.game_img]]",
+        "alt":"[[+tv.game_img_title]]"
+    }
+ ],
+ "link": [
+    {
+        "href":"[[~[[+id]]]]",
+        "title":"[[+pagetitle]]"
+    }
+ ]
+}
+
+3. Make sure to have this code in 'scripts' chunk:
+<script src="[[!++site_url]]assets/templates/theme/js/search.js"></script>
+<script>
+    var gamesListHtml = [ [[getResources? &showHidden=`1` &tpl=`gamesToJSON` &tplLast=`gamesToJSONLast` &limit=`` &includeContent=`1` &includeTVs=`1` &processTVs=`1` &parents=`3` &hideContainers=`1` &sortby=`{"menuindex":"ASC"}`]] ]
+    localStorage.setItem('games', JSON.stringify(gamesListHtml));
+</script>
+
+4. Copy search.js file from repo to theme js folder.
+
+5. Add chunk 'searchForm' with content:
+<form class="form-search" action="" method="">
+    <div class="form-group">
+        <div class="fld-wrap">
+            <input name="search" id="search" value="" class="fld" placeholder="Поиск игры">
+        </div>
+    </div>
+</form>
+
+6. Change snippet call [[!SimpleSearchForm? &tpl=`MySForm` &landing=`114`]] to 'searchForm' chunk call in 'Homepage' template - [[$searchForm]].
+
+7. Remove search snippet call from 'text' and 'Demo-game' templates.
+
+8. Clear browser cache, test if it works. 
+
+Additional:
+ - put to a variable another classes if needed:
+        gamesListBlock = $('.game-list');
+ - working example - https://4aziino777.org
+
