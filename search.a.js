@@ -1,7 +1,7 @@
 /**
  * Script searches through LS games JSON. Read README for details.
  * @author Lana Zakrevska <lana.zakrevska@gmail.com>
- * @version 1.0.0
+ * @version 1.0.2
  */
 
 (function($){
@@ -17,7 +17,7 @@
 
             if (characters > 2) {
                 this.getGames(value);
-            } else if (characters === 0) {
+            } else if (!characters) {
                 this.parseGamesFromLS();
             }
         },
@@ -87,5 +87,9 @@
     };
 
     searchInput.on('input', function() { Search.init(this.value) });
+
+    searchInput.on('keypress', function(e) {
+        if (e.keyCode === 13) { return false; }
+    });
 
 })(jQuery);
