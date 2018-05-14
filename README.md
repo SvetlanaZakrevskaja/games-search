@@ -90,7 +90,7 @@ $(document).on('click',  '.tmb-action button', function(){
 });
 ```
 
-* Copy search.a.min.js, search.v.min.js || search.v24.min.js file from repo to theme js folder.
+* Copy search.a.min.js, search.v.min.js || search.v24.min.js file from repo compile folder to theme js folder.
 
 * Change snippet call [[!SimpleSearchForm? &tpl=`MySForm` &landing=`114`]] to 'searchForm' chunk call in 'Homepage' template - [[$searchForm]].
 
