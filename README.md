@@ -1,5 +1,7 @@
 # Search
 
+Script searches through LS games JSON. Read README for details.
+
 ## Usage
 
 * Create chunk 'gamesToJSON' with content:
@@ -77,8 +79,8 @@ For vulcan:
 </script>
 ```
 
-!!! Make sure to have correct path to the script. For azino - search.a.min.js, for vulkan brands - search.v.min.js or search.v24.min.js.
-Remove set for redirect url if don't need one.
+**!!! Make sure to have correct path to the script. For azino - search.a.min.js, for vulkan brands - search.v.min.js or search.v24.min.js.
+Remove set for redirect url if don't need one.**
 
 * If vulcan brands has js code in order to have a click on the buttons, change it:
 ```
@@ -103,3 +105,10 @@ $(document).on('click',  '.tmb-action button', function(){
         gamesListBlock = $('.game-list');
  - working examples - https://4aziino777.org
 
+## Author
+* Lana Zakrevska
+
+## Versions
+* 1.0.0 - basic search through the games
+* 1.0.1 - Enter key press is banned
+* 1.0.2 - added 2 more versions for different sites
