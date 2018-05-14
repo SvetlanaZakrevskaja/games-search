@@ -1,0 +1,18 @@
+# ignore various IDE project files and folders
+.idea/
+.buildpath
+.project
+.settings/
+nbproject/
+
+node_modules
+
+# ignore php and txt files beginning with test in root directory
+/test*.php
+/test*.txt
+
+# ignore mac files
+.DS_Store
+
+core/cache/*
+!core/cache/.gitignore

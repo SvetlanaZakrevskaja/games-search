@@ -1,6 +1,6 @@
 # Search
 
-Script searches through LS games JSON. Read README for details.
+Script searches through LS games JSON.
 
 ## Usage
 

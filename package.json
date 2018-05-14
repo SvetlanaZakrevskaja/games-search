@@ -1,0 +1,24 @@
+{
+  "name": "games-search",
+  "version": "1.0.2",
+  "description": "Script searches through LS games JSON.",
+  "main": "search.a.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seo-pd/games-search.git"
+  },
+  "author": "Lana Zakrevska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seo-pd/games-search/issues"
+  },
+  "homepage": "https://github.com/seo-pd/games-search#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
