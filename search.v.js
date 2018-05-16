@@ -7,8 +7,6 @@
 (function($){
 
     var searchInput = $('#search'),
-        searchBtn = $('.sb-search__btn'),
-        searchForm = $('.sb-search form'),
         gamesListBlock = $('.items-line');
 
     var Search = {
