@@ -55,7 +55,7 @@ For vulcan:
 <form class="form-search form-search--optimized">
     <div class="form-group">
         <div class="fld-wrap fld-wrap-md">
-            <input name="search" id="search" value="" class="fld fld-search" placeholder="Поиск игры">
+            <input name="search" id="search" value="" class="fld fld-search" placeholder="Поиск...">
             <span class="btn-clear-input"></span>
         </div>
     </div>
@@ -63,15 +63,12 @@ For vulcan:
 
 <form>
     <input name="search" id="search" value="" class="sb-search__input" placeholder="НАЙТИ ИГРУ ...">
-    <div class="sb-search__btn-helper">
-        <button type="submit" class="sb-search__btn">Поиск</button>
-    </div>
 </form>
 ```
 
 * Add code in 'scripts'/'footer_scripts' chunk, ex.:
 ```
-<script src="[[!++site_url]]assets/templates/theme/js/search.a.min.js"></script>
+<script src="[[!++site_url]]assets/templates/theme/js/search.a.js"></script>
 <script>
     var gamesListHtml = [ [[getResources? &showHidden=`1` &tpl=`gamesToJSON` &tplLast=`gamesToJSONLast` &limit=`` &includeContent=`1` &includeTVs=`1` &processTVs=`1` &parents=`3` &hideContainers=`1` &sortby=`{"menuindex":"ASC"}`]] ]
     localStorage.setItem('games', JSON.stringify(gamesListHtml));
@@ -79,7 +76,7 @@ For vulcan:
 </script>
 ```
 
-**!!! Make sure to have correct path to the script. For azino - search.a.min.js, for vulkan brands - search.v.min.js or search.v24.min.js.
+**!!! Make sure to have correct path to the script. For azino - search.a.js, for vulkan brands - search.v.js or search.v24.js.
 Remove set for redirect url if don't need one.**
 
 * If vulcan brands has js code in order to have a click on the buttons, change it:
@@ -90,7 +87,7 @@ $(document).on('click',  '.tmb-action button', function(){
 });
 ```
 
-* Copy search.a.min.js, search.v.min.js || search.v24.min.js file from repo compile folder to theme js folder.
+* Copy search.a.js, search.v.js || search.v24.js file from repo compile folder to theme js folder.
 
 * Change snippet call [[!SimpleSearchForm? &tpl=`MySForm` &landing=`114`]] to 'searchForm' chunk call in 'Homepage' template - [[$searchForm]].
 

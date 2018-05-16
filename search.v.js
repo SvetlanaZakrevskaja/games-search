@@ -1,12 +1,14 @@
 /**
  * Script searches through LS games JSON. Read README for details.
  * @author Lana Zakrevska <lana.zakrevska@gmail.com>
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 (function($){
 
     var searchInput = $('#search'),
+        searchBtn = $('.sb-search__btn'),
+        searchForm = $('.sb-search form'),
         gamesListBlock = $('.items-line');
 
     var Search = {

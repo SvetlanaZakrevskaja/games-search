@@ -9,7 +9,7 @@ var jsFiles = ['./*.js', '!Gulpfile.js'],
     jsDest = 'compiled/';
 
 gulp.task('greet', function () {
-    console.log("\x1b[33m%s\x1b[0m" ,"(: You can write js code now, happy styling :)");
+    console.log("\x1b[33m%s\x1b[0m" ,"(: You can write js code now, happy coding :)");
 });
 
 gulp.task('js', function () {
