@@ -76,7 +76,7 @@ For vulcan:
 </script>
 ```
 
-**!!! Make sure to have correct path to the script. For azino - search.a.js, for vulkan brands - search.v.js or search.v24.js.
+**!!! Make sure to have correct path to the script.
 Remove set for redirect url if don't need one.**
 
 * If vulcan brands has js code in order to have a click on the buttons, change it:
@@ -100,7 +100,6 @@ $(document).on('click',  '.tmb-action button', function(){
 ### Additional:
  - put to a variable another classes if needed:
         gamesListBlock = $('.game-list');
- - working examples - https://4aziino777.org
 
 ## Author
 * Lana Zakrevska
