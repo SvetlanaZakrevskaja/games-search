@@ -1,7 +1,7 @@
 /**
  * Script searches through LS games JSON. Read README for details.
  * @author Lana Zakrevska <lana.zakrevska@gmail.com>
- * @version 1.0.3
+ * @version 1.0.2
  */
 
 (function($){
